@@ -164,10 +164,11 @@ Agentが何をしたかの記録。Memoryに採用されなかった出力も含
 1. 1週間、5〜10件の資料で手動運用する
 2. approve / reject判断が妥当か確認する
 3. Markdownレビューが面倒か確認する
-4. traceが後から見返せるか確認する
-5. 不便だった箇所だけUI化する
-6. データ構造が固まってからSQLite化を検討する
-7. claims / hypotheses が蓄積してからRAG比較を追加する
+4. approve / reject をボタン操作できる Review updates UI の必要性を確認する
+5. traceが後から見返せるか確認する
+6. 不便だった箇所だけUI化する
+7. データ構造が固まってからSQLite化を検討する
+8. claims / hypotheses が蓄積してからRAG比較を追加する
 
 ## MVP後に検討する拡張
 
@@ -177,6 +178,8 @@ MVP完成後すぐに実装するのではなく、1週間の手動運用で必�
 
 - PDFテキスト化対応
 - Review updates の簡易Web UI
+  - review Markdownを直接編集せず、claim / hypothesis update ごとに Approve / Reject ボタンで判定できるようにする
+  - 承認済み更新をまとめてMemoryへ反映する Apply approved updates ボタンを用意する
 - SQLite / FTS5による構造化保存と検索
 - RAG / Wiki / Agent 比較ビュー
 - Agent traceの可視化

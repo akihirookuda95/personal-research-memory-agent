@@ -1,0 +1,13 @@
+{
+  "name": "personal-research-memory-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "node --experimental-strip-types src/cli.ts ingest",
+    "apply-review": "node --experimental-strip-types src/cli.ts apply-review"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
